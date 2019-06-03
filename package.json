@@ -1,0 +1,31 @@
+{
+  "name": "gridfs_example",
+  "version": "0.0.1",
+  "description": "Example of GridFS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index -e .ejs,.js --exec babel-node",
+    "build": "babel src --out-dir dist --copy-files",
+    "start": "yarn run build && node dist/index.js"
+  },
+  "author": "Antonio Soto <fantoniosoto@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-plugin-dynamic-import-node-babel-7": "^2.0.7",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "gridfs-stream": "^1.1.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.5.12",
+    "multer": "^1.4.1",
+    "multer-gridfs-storage": "^3.2.3"
+  }
+}
